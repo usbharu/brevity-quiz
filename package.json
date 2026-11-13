@@ -1,0 +1,12 @@
+{
+  "name": "brevity-quiz",
+  "private": true,
+  "scripts": {
+    "prepare:assets": "mkdir -p public && cp index.html style.css app.js data.js public/",
+    "deploy": "npm run prepare:assets && cf deploy"
+  },
+  "devDependencies": {
+    "wrangler": "*"
+  },
+  "type": "module"
+}
